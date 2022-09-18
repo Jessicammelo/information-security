@@ -1,0 +1,43 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Cifra de César
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<form [formGroup]="formGroup">
+  <ion-content [fullscreen]="true">
+    <ion-header collapse="condense">
+      <ion-toolbar>
+        <ion-title size="large">Cifra de Cézar</ion-title>
+      </ion-toolbar>
+    </ion-header>
+
+    <div id="container">
+      <div class="grid p-fluid">
+        <div class="col-12 md:col-4">
+          <div class="p-inputgroup">
+            <strong>Cifrar</strong>
+            <p>Digite um texto para ser cifrado</p>
+            <textarea type="text" name="textArea" formControlName="textArea" maxlength="150"></textarea>
+            <br>
+            <button (click)="cypher()">Cifrar</button>
+          </div>
+        </div>
+        <br>
+        <br>
+        <div class="col-12 md:col-4">
+          <div class="p-inputgroup">
+            <strong>Decifrar</strong>
+            <p>Digite um texto para ser decifrado</p>
+            <textarea type="text" name="textArea" formControlName="textArea" maxlength="150"></textarea>
+            <br>
+            <button (click)="deCypher()">Decifrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</form>
+
