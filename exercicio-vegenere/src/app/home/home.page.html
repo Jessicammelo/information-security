@@ -1,0 +1,38 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Cifra de Vigènere
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<form [formGroup]="formGroup">
+  <ion-content [fullscreen]="true">
+    <ion-header collapse="condense">
+      <ion-toolbar>
+        <ion-title size="large">Cifra de Vigènere</ion-title>
+      </ion-toolbar>
+    </ion-header>
+
+    <div id="container">
+      <div class="grid p-fluid">
+        <div class="col-12 md:col-4">
+          <div class="p-inputgroup">
+            <strong>Cifrar ou Decifrar</strong>
+            <br>
+            <p>Digite um texto para ser cifrado ou ser decifrado</p>
+            <textarea type="text" name="textArea" formControlName="textArea" maxlength="150"></textarea>
+            <br>
+            <p>Digite uma chave texto</p>
+            <textarea type="text" name="textKey" formControlName="textKey" maxlength="150"></textarea>
+            <br>
+            <button (click)="cypher()">Cifrar</button>
+            <br>
+            <button (click)="deCypher()">Decifrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ion-content>
+</form>
+
