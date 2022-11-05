@@ -1,7 +1,7 @@
 package aes.core;
 
 public class ContextoDeEntrada {
-
+	
 	// Chave digitada em texto simples
 	private String chaveEmTextSimples;
 	// Chave ja convertida para um array bidirecional em hexadecimal
