@@ -15,15 +15,15 @@ import aes.core.RoundKey;
 import aes.core.ShiftRows;
 import aes.core.SubBytes;
 import aes.core.XorTextoSimplesRoundKey0;
-
+//20,1,94,33,199,0,48,9,31,94,112,40,59,30,100,248
 public class Application {
 
 	public static void main(String args[]) throws IOException {
 		System.out.println("Digite a chave");
 		// Le a chave do console
 		Scanner scanner = new Scanner(System.in);
-//		var chave = scanner.next();
-		var chave = "65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80";
+		//var chave = scanner.next();
+		var chave = scanner.next();
 		System.out.println("Digite o path do arquivo");
 		var pathStr = scanner.next();
 		Path path = Paths.get(pathStr);
